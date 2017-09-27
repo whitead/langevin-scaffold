@@ -3,7 +3,7 @@ import asyncio
 import numpy as np
 
 def read_energy(input_file):
-    return None, No
+    return None, None
 
 async def main(sv):
     #create a simple energy
@@ -20,12 +20,9 @@ async def main(sv):
 
 
 
-def start1():
+def start():
     sv = SimVis()
     start_server(sv)
     asyncio.ensure_future(main(sv))
     loop = asyncio.get_event_loop()
     loop.run_forever()
-
-def start():
-    print('HI!!!!!!!!!!i')
