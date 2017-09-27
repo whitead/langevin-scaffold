@@ -8,5 +8,9 @@ setup(name='LangevinSim',
       description='Langevin Simulator',
       long_description=long_description,
       author='Andrew White',
-      packages=['lans']
+      packages=['lans'],
+      entry_points=
+      {
+        'console_scripts': ['langevin=lans.lans:start']
+      }
      )

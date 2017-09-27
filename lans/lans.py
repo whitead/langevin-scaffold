@@ -1,2 +1,31 @@
+from .visualization import SimVis, start_server
+import asyncio
+import numpy as np
+
 def read_energy(input_file):
-    return None, None
+    return None, No
+
+async def main(sv):
+    #create a simple energy
+
+    x = np.linspace(-1, 1, 100)
+    y = x**2
+    sv.set_energy(x, y)
+
+
+
+    while True:
+        sv.set_position(np.random.random(1))
+        await asyncio.sleep(0.5)
+
+
+
+def start1():
+    sv = SimVis()
+    start_server(sv)
+    asyncio.ensure_future(main(sv))
+    loop = asyncio.get_event_loop()
+    loop.run_forever()
+
+def start():
+    print('HI!!!!!!!!!!i')
