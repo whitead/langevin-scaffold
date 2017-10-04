@@ -1,3 +1,5 @@
+![code cocerage](img/coverage.svg)
+
 CHE 477 Langevin Project
 =========================
 
