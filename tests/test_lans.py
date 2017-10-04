@@ -16,5 +16,5 @@ def test_read_energy_read():
     '''
     test_file = io.StringIO(test_string)
     pos, energy = lans.read_energy(test_file)
-    #assert np.isclose(pos, [0, 1, 2, 3, 4])
-    #assert np.isclose(energy, [-2, -1, 0, 0, 3])
+    assert np.isclose(pos, [0, 1, 2, 3, 4])
+    assert np.isclose(energy, [-2, -1, 0, 0, 3])
